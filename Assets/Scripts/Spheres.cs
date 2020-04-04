@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spheres : MonoBehaviour
 {
-    public float delay = 0.5f;  //The delay time for the sphere to spawn  
+    public float delay = 0.3f;  //The delay time for the sphere to spawn  
     public GameObject sphere;   //The object for the sphere
 
     // Start is called before the first frame update
