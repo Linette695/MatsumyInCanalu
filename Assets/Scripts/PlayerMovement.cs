@@ -16,16 +16,16 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb = GetComponent<Rigidbody2D>();
-        //Getting player input
+        
+        //Getting player input to allow character to move sideways
         movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+       
         
     }//End of update
 
     public void FixedUpdate()
     {
-        rb = GetComponent<Rigidbody2D>();
+        //Update the position of the character
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
 }
