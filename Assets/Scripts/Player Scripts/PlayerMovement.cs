@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public Rigidbody2D rb ;
-    Vector2 movement;
+    public Rigidbody rb ;
+    Vector3 movement;
     public float speed = 5f;
 
 
@@ -27,5 +27,14 @@ public class PlayerMovement : MonoBehaviour
     {
         //Update the position of the character
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
-    }
-}
+    }//End of FixedUpdate
+
+    private void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.CompareTag("Sphere")) {
+            Debug.Log("Character has touched sphere");
+        }
+        
+    }//End of OnCollision2D
+
+}//End of PlayerMovement
