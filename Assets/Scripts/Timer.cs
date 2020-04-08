@@ -24,12 +24,17 @@ public class Timer : MonoBehaviour
     void Update()
     {
 
-        if (timeLeft > 0)
+        if (timeLeft > 0 && timerOn)
         {
             timeLeft -= Time.deltaTime;
             displayTime(timeLeft);
         }
-        else {
+        else if (timerOn == false)
+        {
+            displayTime(timeLeft);
+        }
+        else
+        {
             Debug.Log("You've survived!");
             timeLeft = 0;
             timerOn = false;
@@ -49,5 +54,12 @@ public class Timer : MonoBehaviour
 
     }//End of displayTime
 
+    public void setTimeLeft(float t) {
+        timeLeft = t;
+    }//end of setTimeLeft
+
+    public float getTimeLeft() {
+        return timeLeft;
+    }//End of getTimeLeft
 
 }//End of Timer class

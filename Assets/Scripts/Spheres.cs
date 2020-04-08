@@ -6,7 +6,7 @@ public class Spheres : MonoBehaviour
 {
     public float delay = 0.3f;  //The delay time for the sphere to spawn  
     public GameObject sphere;   //The object for the sphere
-
+    public bool spawnOn = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,10 +14,27 @@ public class Spheres : MonoBehaviour
     }
 
     // Update is called once per frame
-   
 
+
+    private void Update()
+    {
+       /* if (spawnOn == true) {
+            InvokeRepeating("Spawn", delay, delay);
+        }
+        else { 
+        
+        }*/
+    }
     void Spawn()
     {
-        Instantiate(sphere, new Vector3(Random.Range(-8, 8), 10, 0), Quaternion.identity);
+        if (spawnOn == true)
+        {
+            Instantiate(sphere, new Vector3(Random.Range(-8, 8), 10, 0), Quaternion.identity);
+        }
+        else
+        {
+
+        }
+        //Instantiate(sphere, new Vector3(Random.Range(-8, 8), 10, 0), Quaternion.identity);
     }
 }

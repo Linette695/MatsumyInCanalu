@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
+    public GameObject pauseMenu;
+    public Timer timer;
+    public Spheres spheres;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +45,15 @@ public class Buttons : MonoBehaviour
         Debug.Log("Use arrow keys");
         EventSystem.current.SetSelectedGameObject(null);
     }//End of howToPlay
+
+    public void unpause() {
+
+        pauseMenu.SetActive(false);
+        spheres.spawnOn = true;
+        timer.setTimeLeft(timer.getTimeLeft());
+        timer.timerOn = true;
+        
+    }//End of unpause
 
 
 

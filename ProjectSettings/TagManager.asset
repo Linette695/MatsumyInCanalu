@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Sphere
   - Timer
+  - PauseMenu
   layers:
   - Default
   - TransparentFX
