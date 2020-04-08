@@ -38,6 +38,10 @@ public class Buttons : MonoBehaviour
     }//End of End
 
 
+    public void howToPlay() {
+        Debug.Log("Use arrow keys");
+        EventSystem.current.SetSelectedGameObject(null);
+    }//End of howToPlay
 
 
 
