@@ -34,9 +34,12 @@ public class GameLevelController : MonoBehaviour
               Application.Quit();
             #endif*/
         }
+
+        //Check if it is GameOver 
         if (timer.timeLeft == 0 ||  health.healthBar.value == 0 ) {
             spheres.spawnOn = false;
             timer.timerOn = false;
+            
             gameOverPanel.SetActive(true);
         }
 

@@ -17,7 +17,7 @@ public class Timer : MonoBehaviour
     {
         //Start timer at the beginning
         timerOn = true;
-        
+
     }//End of Start 
 
     // Update is called once per frame
@@ -40,18 +40,27 @@ public class Timer : MonoBehaviour
             timerOn = false;
         }
 
-        
+
     }//End of Update 
 
-    void displayTime(float t) {
-        t += 1;
+    public void displayTime(float t) {
+        if (t == 0)
+        {
 
-        float mins = Mathf.FloorToInt(t / 60);  //Calculate the minutes
-        float secs = Mathf.FloorToInt(t % 60);  //Calculate the seconds
+            float mins = Mathf.FloorToInt(t / 60);  //Calculate the minutes
+            float secs = Mathf.FloorToInt(t % 60);  //Calculate the seconds
+            timeText.text = string.Format("{0:00}:{1:00}", mins, secs);
+        }
+        else
+        {
+            t += 1;
+
+            float mins = Mathf.FloorToInt(t / 60);  //Calculate the minutes
+            float secs = Mathf.FloorToInt(t % 60);  //Calculate the seconds
 
 
-        timeText.text = string.Format("{0:00}:{1:00}", mins, secs);
-
+            timeText.text = string.Format("{0:00}:{1:00}", mins, secs);
+        }
     }//End of displayTime
 
     public void setTimeLeft(float t) {
