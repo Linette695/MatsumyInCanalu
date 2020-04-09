@@ -47,7 +47,8 @@ public class PlayerHealth : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Sphere"))
         {
-            damageHealth(5);
+            
+            damageHealth(10);
             Debug.Log("Character has touched sphere PLYER");
         }
 

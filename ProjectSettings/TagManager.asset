@@ -7,6 +7,7 @@ TagManager:
   - Sphere
   - Timer
   - PauseMenu
+  - GameOver
   layers:
   - Default
   - TransparentFX
