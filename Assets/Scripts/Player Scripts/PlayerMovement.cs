@@ -29,12 +29,6 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }//End of FixedUpdate
 
-    private void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.CompareTag("Sphere")) {
-            Debug.Log("Character has touched sphere");
-        }
-        
-    }//End of OnCollision2D
+    
 
 }//End of PlayerMovement
