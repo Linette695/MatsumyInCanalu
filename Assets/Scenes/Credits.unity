@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 762507383}
   - component: {fileID: 762507386}
   m_Layer: 5
-  m_Name: MainMenueButton
+  m_Name: MainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -652,7 +652,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "MAIN\n MENUE"
+  m_Text: "MAIN\n MENU"
 --- !u!222 &1247506611
 CanvasRenderer:
   m_ObjectHideFlags: 0
