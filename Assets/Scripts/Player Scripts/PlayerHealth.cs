@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     public int currentH = 0; //Wil hold the current health of the player
     public int maxHealth = 100; //The maximum health player can have
     public HealthBar healthBar;
+    public Timer timer;
     // Start is called before the first frame update
 
     void Start()
@@ -23,10 +24,10 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        /*if (Input.GetKeyDown(KeyCode.Space))
         {
             damageHealth(5);
-        }
+        }*/
 
     }//End of Update
 
@@ -45,14 +46,14 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.CompareTag("Sphere"))
+        if (col.gameObject.CompareTag("Sphere") && timer.timerOn == true)
         {
             
             damageHealth(5);
             Debug.Log("Character has touched sphere PLYER");
         }
 
-        if (col.gameObject.CompareTag("SphereL"))
+        if (col.gameObject.CompareTag("SphereL") && timer.timerOn == true)
         {
 
             damageHealth(10);

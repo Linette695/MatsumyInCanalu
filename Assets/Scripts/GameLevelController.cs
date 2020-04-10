@@ -40,9 +40,9 @@ public class GameLevelController : MonoBehaviour
         //Check if player has quitted the game using the escape key
         if (Input.GetKeyDown(KeyCode.Escape)){
             pauseMenu.SetActive(true);
+            timer.timerOn = false;
             spheres.spawnOn = false;
             spheresL.spawnOn = false;
-            timer.timerOn = false;
             timer.setTimeLeft(timer.getTimeLeft());
    
         
