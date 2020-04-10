@@ -258,6 +258,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1566320591}
   timer: {fileID: 1843110488}
   spheres: {fileID: 13885769}
+  spheresL: {fileID: 13885772}
 --- !u!114 &13885772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,6 +419,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1566320591}
   timer: {fileID: 1843110488}
   spheres: {fileID: 13885769}
+  spheresL: {fileID: 13885772}
 --- !u!1 &200323769
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,6 +565,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1566320591}
   timer: {fileID: 1843110488}
   spheres: {fileID: 13885769}
+  spheresL: {fileID: 13885772}
 --- !u!1 &245590670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1813,6 +1816,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1566320591}
   timer: {fileID: 1843110488}
   spheres: {fileID: 13885769}
+  spheresL: {fileID: 13885772}
 --- !u!1 &999090798
 GameObject:
   m_ObjectHideFlags: 0
@@ -2919,6 +2923,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1566320591}
   timer: {fileID: 1843110488}
   spheres: {fileID: 13885769}
+  spheresL: {fileID: 13885772}
 --- !u!1 &1810119920
 GameObject:
   m_ObjectHideFlags: 0
@@ -3051,6 +3056,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1566320591}
   timer: {fileID: 1843110488}
   spheres: {fileID: 13885769}
+  spheresL: {fileID: 13885772}
 --- !u!114 &1826266272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3286,6 +3292,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1566320591}
   timer: {fileID: 1843110488}
   spheres: {fileID: 13885769}
+  spheresL: {fileID: 13885772}
 --- !u!1 &1843110486
 GameObject:
   m_ObjectHideFlags: 0

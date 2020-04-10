@@ -266,6 +266,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 39992709}
   timer: {fileID: 126808433}
   spheres: {fileID: 2043728467}
+  spheresL: {fileID: 2043728470}
 --- !u!1 &3025270
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,6 +464,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 39992709}
   timer: {fileID: 126808433}
   spheres: {fileID: 2043728467}
+  spheresL: {fileID: 0}
 --- !u!114 &20876693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -895,7 +897,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -157.96, y: -9.399994}
+  m_AnchoredPosition: {x: -157.95999, y: -9.399994}
   m_SizeDelta: {x: 12.820984, y: 4.0690002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &126808433
@@ -1517,9 +1519,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cbc119117695747bbf4e1ba102c676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
-  timer: {fileID: 0}
-  spheres: {fileID: 0}
+  pauseMenu: {fileID: 39992709}
+  timer: {fileID: 126808433}
+  spheres: {fileID: 2043728467}
+  spheresL: {fileID: 2043728470}
 --- !u!114 &822672635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1839,6 +1842,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 39992709}
   timer: {fileID: 126808433}
   spheres: {fileID: 2043728467}
+  spheresL: {fileID: 2043728470}
 --- !u!114 &1055520244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2057,6 +2061,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 39992709}
   timer: {fileID: 126808433}
   spheres: {fileID: 2043728467}
+  spheresL: {fileID: 2043728470}
 --- !u!114 &1265492175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2430,9 +2435,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cbc119117695747bbf4e1ba102c676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
-  timer: {fileID: 0}
-  spheres: {fileID: 0}
+  pauseMenu: {fileID: 39992709}
+  timer: {fileID: 126808433}
+  spheres: {fileID: 2043728467}
+  spheresL: {fileID: 2043728470}
 --- !u!114 &1818182381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3353,6 +3359,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 39992709}
   timer: {fileID: 126808433}
   spheres: {fileID: 2043728467}
+  spheresL: {fileID: 2043728470}
 --- !u!114 &2043728470
 MonoBehaviour:
   m_ObjectHideFlags: 0

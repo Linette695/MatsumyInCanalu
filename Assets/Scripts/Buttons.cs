@@ -9,7 +9,8 @@ public class Buttons : MonoBehaviour
     public GameObject pauseMenu;
     public Timer timer;
     public Spheres spheres;
-    // Start is called before the first frame update
+    public SpheresL spheresL;
+   // Start is called before the first frame update
     void Start()
     {
         
@@ -43,13 +44,21 @@ public class Buttons : MonoBehaviour
 
     public void howToPlay() {
         Debug.Log("Use arrow keys");
+
+        //Make sure the button does not look like it has been clicked
         EventSystem.current.SetSelectedGameObject(null);
     }//End of howToPlay
 
     public void unpause() {
 
+        //Make the pause menu go away
         pauseMenu.SetActive(false);
+        
+        //Turn on the spawn of the spheres 
         spheres.spawnOn = true;
+        spheresL.spawnOn = true;
+
+        //Turn on the timemer 
         timer.setTimeLeft(timer.getTimeLeft());
         timer.timerOn = true;
         
