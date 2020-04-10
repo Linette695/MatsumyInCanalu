@@ -301,8 +301,8 @@ RectTransform:
   - {fileID: 126808432}
   - {fileID: 2058546504}
   - {fileID: 1998652445}
-  - {fileID: 39992710}
   - {fileID: 67332685}
+  - {fileID: 39992710}
   - {fileID: 163250271}
   m_Father: {fileID: 869303000}
   m_RootOrder: 1
@@ -665,7 +665,7 @@ RectTransform:
   - {fileID: 1534789225}
   - {fileID: 1265492173}
   m_Father: {fileID: 3025271}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -817,7 +817,7 @@ RectTransform:
   - {fileID: 404633626}
   - {fileID: 1055520242}
   m_Father: {fileID: 3025271}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1181,8 +1181,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18, y: 18.1}
-  m_SizeDelta: {x: 412.4, y: 90.1}
+  m_AnchoredPosition: {x: 24.6, y: 17}
+  m_SizeDelta: {x: 421.1, y: 87.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &404633627
 MonoBehaviour:
@@ -1351,7 +1351,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.64, z: 0.2}
+  m_Size: {x: 0.4, y: 0.64, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &427659494
 MonoBehaviour:

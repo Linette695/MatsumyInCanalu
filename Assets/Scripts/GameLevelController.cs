@@ -38,16 +38,21 @@ public class GameLevelController : MonoBehaviour
     void Update()
     {
         //Check if player has quitted the game using the escape key
-        if (Input.GetKeyDown(KeyCode.Escape)){
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
             pauseMenu.SetActive(true);
             timer.timerOn = false;
             spheres.spawnOn = false;
             spheresL.spawnOn = false;
             timer.setTimeLeft(timer.getTimeLeft());
-   
-        
-        }
 
+/*
+            //This is to apply when colliding with Mushroom
+            player.transform.localScale = new Vector2(1.4f, 1.4f);
+            player.transform.position = new Vector3(transform.position.x, transform.position.y + 1.6f, 0);*/
+            
+
+        }
         //Check if it is GameOver  due to no more health
         if (  health.healthBar.value == 0 ) {
             spheres.spawnOn = false;
