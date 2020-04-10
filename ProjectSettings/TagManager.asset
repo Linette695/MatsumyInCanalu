@@ -8,6 +8,7 @@ TagManager:
   - Timer
   - PauseMenu
   - GameOver
+  - NextLevel
   layers:
   - Default
   - TransparentFX

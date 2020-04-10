@@ -35,7 +35,7 @@ public class Timer : MonoBehaviour
         }
         else
         {
-            Debug.Log("You've survived!");
+            /*Debug.Log("You've survived!");*/
             timeLeft = 0;
             timerOn = false;
         }

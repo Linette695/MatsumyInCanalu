@@ -7,6 +7,7 @@ public class GameLevelController : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject gameOverPanel;
+    public GameObject nextLevelPanel;
     public GameObject player;
     public Timer timer;
     public Spheres spheres;
@@ -19,10 +20,12 @@ public class GameLevelController : MonoBehaviour
     void Start()
     {
         
-
+        //Make panels not visible at beginning
         pauseMenu.SetActive(false);
         gameOverPanel.SetActive(false);
+        nextLevelPanel.SetActive(false);
 
+        //Initiate the Singleton object/the player info
         info = Singleton.Instance.info;
         Debug.Log("health is:" + info.getPlayerHealth());
         Debug.Log("umbrellas is:" + info.getNumUbrellas());
@@ -40,14 +43,10 @@ public class GameLevelController : MonoBehaviour
             timer.timerOn = false;
             timer.setTimeLeft(timer.getTimeLeft());
    
-         /*   #if UNITY_EDITOR
-             UnityEditor.EditorApplication.isPlaying = false;
-            #else
-              Application.Quit();
-            #endif*/
+        
         }
 
-        //Check if it is GameOver 
+        //Check if it is GameOver  due to no more health
         if (  health.healthBar.value == 0 ) {
             spheres.spawnOn = false;
             timer.timerOn = false;
@@ -55,9 +54,18 @@ public class GameLevelController : MonoBehaviour
             gameOverPanel.SetActive(true);
         }
 
+
+        //Check if player survived the level due to surviving the countdown
         if (timer.timeLeft == 0) {
+            spheres.spawnOn = false;
+            timer.timerOn = false; 
+
             info.setPlayerHealth(health.healthBar.value);
-            switchScene(3);
+            Debug.Log("You've survived!");
+            Debug.Log("health is:" + info.getPlayerHealth());
+            Debug.Log("umbrellas is:" + info.getNumUbrellas());
+
+            nextLevelPanel.SetActive(true);
         }
 
     }//End of Update 
