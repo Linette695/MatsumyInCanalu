@@ -9,6 +9,7 @@ TagManager:
   - PauseMenu
   - GameOver
   - NextLevel
+  - SphereL
   layers:
   - Default
   - TransparentFX

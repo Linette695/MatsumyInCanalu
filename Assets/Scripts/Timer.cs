@@ -46,7 +46,7 @@ public class Timer : MonoBehaviour
     public void displayTime(float t) {
         if (t == 0)
         {
-
+            timerOn = false;
             float mins = Mathf.FloorToInt(t / 60);  //Calculate the minutes
             float secs = Mathf.FloorToInt(t % 60);  //Calculate the seconds
             timeText.text = string.Format("{0:00}:{1:00}", mins, secs);

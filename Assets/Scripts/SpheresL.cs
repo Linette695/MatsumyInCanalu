@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spheres : MonoBehaviour
+public class SpheresL : MonoBehaviour
 {
     public float delay = 0.3f;  //The delay time for the sphere to spawn  
-    public GameObject sphere;   //The object for the sphere
+    public GameObject sphereL;   //The object for the sphere
     public bool spawnOn = true;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,13 +19,13 @@ public class Spheres : MonoBehaviour
 
     private void Update()
     {
-      
+        
     }
     void Spawn()
     {
         if (spawnOn == true)
         {
-            Instantiate(sphere, new Vector3(Random.Range(-8, 8), 10, 0), Quaternion.identity);
+            Instantiate(sphereL, new Vector3(Random.Range(-8, 8), 10, 0), Quaternion.identity);
         }
         else
         {

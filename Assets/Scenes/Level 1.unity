@@ -1766,6 +1766,7 @@ MonoBehaviour:
   player: {fileID: 692167046}
   timer: {fileID: 126808433}
   spheres: {fileID: 2043728467}
+  spheresL: {fileID: 2043728470}
   health: {fileID: 1998652446}
 --- !u!4 &994082492
 Transform:
@@ -3227,6 +3228,7 @@ GameObject:
   - component: {fileID: 2043728467}
   - component: {fileID: 2043728468}
   - component: {fileID: 2043728469}
+  - component: {fileID: 2043728470}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3311,7 +3313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeb59dbeccfe36a429a56a3ac4b76437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.9
+  delay: 0.6
   sphere: {fileID: 2601609463972778430, guid: 2416d2df54f447040aa7363ac7fcd3be, type: 3}
   spawnOn: 1
 --- !u!114 &2043728468
@@ -3332,6 +3334,7 @@ MonoBehaviour:
   player: {fileID: 692167046}
   timer: {fileID: 126808433}
   spheres: {fileID: 2043728467}
+  spheresL: {fileID: 2043728470}
   health: {fileID: 1998652446}
 --- !u!114 &2043728469
 MonoBehaviour:
@@ -3348,6 +3351,21 @@ MonoBehaviour:
   pauseMenu: {fileID: 39992709}
   timer: {fileID: 126808433}
   spheres: {fileID: 2043728467}
+--- !u!114 &2043728470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043728463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0dcae4f6cdcd604dbdf5b7c51d52c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.3
+  sphereL: {fileID: 6132574668339585376, guid: 168105da6b74290479244f92b78627cd, type: 3}
+  spawnOn: 0
 --- !u!1 &2046068075
 GameObject:
   m_ObjectHideFlags: 0

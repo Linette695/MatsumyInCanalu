@@ -11,6 +11,7 @@ public class GameLevelController : MonoBehaviour
     public GameObject player;
     public Timer timer;
     public Spheres spheres;
+    public SpheresL spheresL;
     //public PlayerHealth health;
     public HealthBar health;
 
@@ -40,6 +41,7 @@ public class GameLevelController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape)){
             pauseMenu.SetActive(true);
             spheres.spawnOn = false;
+            spheresL.spawnOn = false;
             timer.timerOn = false;
             timer.setTimeLeft(timer.getTimeLeft());
    
@@ -49,6 +51,7 @@ public class GameLevelController : MonoBehaviour
         //Check if it is GameOver  due to no more health
         if (  health.healthBar.value == 0 ) {
             spheres.spawnOn = false;
+            spheresL.spawnOn = false;
             timer.timerOn = false;
             
             gameOverPanel.SetActive(true);
@@ -58,6 +61,7 @@ public class GameLevelController : MonoBehaviour
         //Check if player survived the level due to surviving the countdown
         if (timer.timeLeft == 0) {
             spheres.spawnOn = false;
+            spheresL.spawnOn = false;
             timer.timerOn = false; 
 
             info.setPlayerHealth(health.healthBar.value);
