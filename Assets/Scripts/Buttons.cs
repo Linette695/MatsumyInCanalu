@@ -53,10 +53,18 @@ public class Buttons : MonoBehaviour
 
         //Make the pause menu go away
         pauseMenu.SetActive(false);
-        
-        //Turn on the spawn of the spheres 
-        spheres.spawnOn = true;
-        spheresL.spawnOn = true;
+        Debug.Log("Curr Scene: " + SceneManager.GetActiveScene().name);
+        if (SceneManager.GetActiveScene().name.Equals("Level 1")) 
+        {
+            //Turn on the spawn of the spheres 
+            spheres.spawnOn = true;
+            spheresL.spawnOn = false;
+        }
+        else {
+            //Turn on the spawn of the spheres 
+            spheres.spawnOn = true;
+            spheresL.spawnOn = true;
+        }
 
         //Turn on the timemer 
         timer.setTimeLeft(timer.getTimeLeft());
