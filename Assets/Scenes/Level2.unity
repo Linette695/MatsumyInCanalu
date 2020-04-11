@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeb59dbeccfe36a429a56a3ac4b76437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.3
   sphere: {fileID: 2601609463972778430, guid: 2416d2df54f447040aa7363ac7fcd3be, type: 3}
   spawnOn: 1
 --- !u!114 &13885770
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0dcae4f6cdcd604dbdf5b7c51d52c6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 2
+  delay: 1
   sphereL: {fileID: 6132574668339585376, guid: 168105da6b74290479244f92b78627cd, type: 3}
   spawnOn: 1
 --- !u!1 &154526132
@@ -3106,7 +3106,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

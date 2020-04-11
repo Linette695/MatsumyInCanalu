@@ -176,6 +176,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 0}
   timer: {fileID: 0}
   spheres: {fileID: 0}
+  spheresL: {fileID: 0}
 --- !u!114 &52196562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,6 +399,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 0}
   timer: {fileID: 0}
   spheres: {fileID: 0}
+  spheresL: {fileID: 0}
 --- !u!114 &384544121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1222,6 +1224,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 0}
   timer: {fileID: 0}
   spheres: {fileID: 0}
+  spheresL: {fileID: 0}
 --- !u!1 &489403565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,6 +1298,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 0}
   timer: {fileID: 0}
   spheres: {fileID: 0}
+  spheresL: {fileID: 0}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1305,7 +1309,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.05882353, g: 0.38039216, b: 0.6431373, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1583,6 +1587,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 0}
   timer: {fileID: 0}
   spheres: {fileID: 0}
+  spheresL: {fileID: 0}
 --- !u!114 &1341087598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2118,7 +2123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9056604, g: 0.9056604, b: 0.9056604, a: 0.84313726}
+  m_Color: {r: 0.9056604, g: 0.9056604, b: 0.9056604, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

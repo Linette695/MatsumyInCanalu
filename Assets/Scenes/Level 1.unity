@@ -514,7 +514,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -897,7 +897,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -157.95999, y: -9.399994}
+  m_AnchoredPosition: {x: -157.96, y: -9.399994}
   m_SizeDelta: {x: 12.820984, y: 4.0690002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &126808433
@@ -3262,7 +3262,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.057493754, g: 0.37879494, b: 0.6415094, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3321,7 +3321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeb59dbeccfe36a429a56a3ac4b76437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.6
+  delay: 0.3
   sphere: {fileID: 2601609463972778430, guid: 2416d2df54f447040aa7363ac7fcd3be, type: 3}
   spawnOn: 1
 --- !u!114 &2043728468
