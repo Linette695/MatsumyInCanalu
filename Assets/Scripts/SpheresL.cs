@@ -25,7 +25,7 @@ public class SpheresL : MonoBehaviour
     {
         if (spawnOn == true)
         {
-            Instantiate(sphereL, new Vector3(Random.Range(-8, 8), 10, 0), Quaternion.identity);
+            Instantiate(sphereL, new Vector3(Random.Range(-9, 10), 10, 0), Quaternion.identity);
         }
         else
         {
