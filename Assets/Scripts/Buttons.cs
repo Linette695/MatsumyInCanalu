@@ -6,10 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
-    public GameObject pauseMenu;
-    public Timer timer;
+    public GameObject pauseMenu;    //The pause menu
+    public Timer timer;     //Timer
+
+    //Spawining objects
     public Spheres spheres;
     public SpheresL spheresL;
+    public PurpleRain purpleRainDrops;
+    public BlueRain blueRainDrops;
+
    // Start is called before the first frame update
     void Start()
     {
@@ -54,14 +59,26 @@ public class Buttons : MonoBehaviour
         //Make the pause menu go away
         pauseMenu.SetActive(false);
         Debug.Log("Curr Scene: " + SceneManager.GetActiveScene().name);
-        if (SceneManager.GetActiveScene().name.Equals("Level 1")) 
+
+        //Turn ob spawning of objects according to which level player is in
+        if (SceneManager.GetActiveScene().name.Equals("Level 1"))
         {
-            //Turn on the spawn of the spheres 
+            //Turn on the spawn of rocks 
             spheres.spawnOn = true;
             spheresL.spawnOn = false;
+            
+
         }
-        else {
-            //Turn on the spawn of the spheres 
+        else if (SceneManager.GetActiveScene().name.Equals("Level3")) {
+            //Turn on the spawn of the rocks and rain
+            spheres.spawnOn = true;
+            spheresL.spawnOn = true;
+            purpleRainDrops.spawnOn = true;
+            blueRainDrops.spawnOn = true;
+        }
+        else
+        {
+            //Turn on the spawn of the rocks
             spheres.spawnOn = true;
             spheresL.spawnOn = true;
         }

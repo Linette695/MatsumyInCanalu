@@ -136,6 +136,8 @@ GameObject:
   - component: {fileID: 13885770}
   - component: {fileID: 13885771}
   - component: {fileID: 13885772}
+  - component: {fileID: 13885773}
+  - component: {fileID: 13885774}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -240,9 +242,11 @@ MonoBehaviour:
   nextLevelPanel: {fileID: 555922838}
   player: {fileID: 999090798}
   timer: {fileID: 1843110488}
+  health: {fileID: 599110620}
   spheres: {fileID: 13885769}
   spheresL: {fileID: 13885772}
-  health: {fileID: 599110620}
+  purpleRaindrops: {fileID: 13885773}
+  blueRaindrops: {fileID: 13885774}
 --- !u!114 &13885771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,6 +263,8 @@ MonoBehaviour:
   timer: {fileID: 1843110488}
   spheres: {fileID: 13885769}
   spheresL: {fileID: 13885772}
+  purpleRainDrops: {fileID: 13885773}
+  blueRainDrops: {fileID: 13885774}
 --- !u!114 &13885772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,6 +280,37 @@ MonoBehaviour:
   delay: 0.3
   sphereL: {fileID: 6132574668339585376, guid: 168105da6b74290479244f92b78627cd, type: 3}
   spawnOn: 1
+--- !u!114 &13885773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13885765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b679d4fc6babc2f40af7f4b012eb93e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.3
+  purpleRain: {fileID: 5739327338854887668, guid: 08e8ed0f2536021478a8c2bd9c4d84fd,
+    type: 3}
+  spawnOn: 0
+--- !u!114 &13885774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13885765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7660014be463d3d439917a66ca3ea265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.3
+  blueRain: {fileID: 0}
+  spawnOn: 0
 --- !u!1 &154526132
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,6 +457,8 @@ MonoBehaviour:
   timer: {fileID: 1843110488}
   spheres: {fileID: 13885769}
   spheresL: {fileID: 13885772}
+  purpleRainDrops: {fileID: 13885773}
+  blueRainDrops: {fileID: 13885774}
 --- !u!1 &200323769
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,6 +605,8 @@ MonoBehaviour:
   timer: {fileID: 1843110488}
   spheres: {fileID: 13885769}
   spheresL: {fileID: 13885772}
+  purpleRainDrops: {fileID: 13885773}
+  blueRainDrops: {fileID: 13885774}
 --- !u!1 &245590670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1817,6 +1858,8 @@ MonoBehaviour:
   timer: {fileID: 1843110488}
   spheres: {fileID: 13885769}
   spheresL: {fileID: 13885772}
+  purpleRainDrops: {fileID: 13885773}
+  blueRainDrops: {fileID: 13885774}
 --- !u!1 &999090798
 GameObject:
   m_ObjectHideFlags: 0
@@ -2308,9 +2351,11 @@ MonoBehaviour:
   nextLevelPanel: {fileID: 555922838}
   player: {fileID: 999090798}
   timer: {fileID: 1843110488}
+  health: {fileID: 599110620}
   spheres: {fileID: 13885769}
   spheresL: {fileID: 13885772}
-  health: {fileID: 599110620}
+  purpleRaindrops: {fileID: 13885773}
+  blueRaindrops: {fileID: 13885774}
 --- !u!4 &1259791613
 Transform:
   m_ObjectHideFlags: 0
@@ -2924,6 +2969,8 @@ MonoBehaviour:
   timer: {fileID: 1843110488}
   spheres: {fileID: 13885769}
   spheresL: {fileID: 13885772}
+  purpleRainDrops: {fileID: 13885773}
+  blueRainDrops: {fileID: 13885774}
 --- !u!1 &1810119920
 GameObject:
   m_ObjectHideFlags: 0
@@ -3057,6 +3104,8 @@ MonoBehaviour:
   timer: {fileID: 1843110488}
   spheres: {fileID: 13885769}
   spheresL: {fileID: 13885772}
+  purpleRainDrops: {fileID: 13885773}
+  blueRainDrops: {fileID: 13885774}
 --- !u!114 &1826266272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3293,6 +3342,8 @@ MonoBehaviour:
   timer: {fileID: 1843110488}
   spheres: {fileID: 13885769}
   spheresL: {fileID: 13885772}
+  purpleRainDrops: {fileID: 13885773}
+  blueRainDrops: {fileID: 13885774}
 --- !u!1 &1843110486
 GameObject:
   m_ObjectHideFlags: 0

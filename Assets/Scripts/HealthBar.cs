@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    public Slider healthBar;
-    public PlayerHealth playerHealth;
-    public GameObject player;
+    public Slider healthBar;    //Will hold the health bar
+    public PlayerHealth playerHealth;   //The player health script
+    public GameObject player;   //The player/character
+
     // Start is called before the first frame update
     void Start()
     {

@@ -177,6 +177,7 @@ MonoBehaviour:
   timer: {fileID: 0}
   spheres: {fileID: 0}
   spheresL: {fileID: 0}
+  purpleRainDrops: {fileID: 0}
 --- !u!114 &52196562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,6 +401,7 @@ MonoBehaviour:
   timer: {fileID: 0}
   spheres: {fileID: 0}
   spheresL: {fileID: 0}
+  purpleRainDrops: {fileID: 0}
 --- !u!114 &384544121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1225,6 +1227,7 @@ MonoBehaviour:
   timer: {fileID: 0}
   spheres: {fileID: 0}
   spheresL: {fileID: 0}
+  purpleRainDrops: {fileID: 0}
 --- !u!1 &489403565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,6 +1302,7 @@ MonoBehaviour:
   timer: {fileID: 0}
   spheres: {fileID: 0}
   spheresL: {fileID: 0}
+  purpleRainDrops: {fileID: 0}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1588,6 +1592,7 @@ MonoBehaviour:
   timer: {fileID: 0}
   spheres: {fileID: 0}
   spheresL: {fileID: 0}
+  purpleRainDrops: {fileID: 0}
 --- !u!114 &1341087598
 MonoBehaviour:
   m_ObjectHideFlags: 0

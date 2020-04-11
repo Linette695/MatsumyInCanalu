@@ -49,15 +49,23 @@ public class PlayerHealth : MonoBehaviour
         if (col.gameObject.CompareTag("Sphere") && timer.timerOn == true)
         {
             
-            damageHealth(5);
+            damageHealth(10);
             Debug.Log("Character has touched sphere PLYER");
         }
 
         if (col.gameObject.CompareTag("SphereL") && timer.timerOn == true)
         {
 
-            damageHealth(10);
+            damageHealth(18);
             Debug.Log("Character has touched Large Sphere PLYER");
+        }
+
+
+        if (col.gameObject.CompareTag("PurpleRainDrop") && timer.timerOn == true)
+        {
+
+            damageHealth(5);
+            Debug.Log("Character has touched purple rain");
         }
 
     }//End of OnCollision2D
