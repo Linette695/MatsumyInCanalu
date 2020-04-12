@@ -56,7 +56,7 @@ public class PlayerHealth : MonoBehaviour
         if (col.gameObject.CompareTag("SphereL") && timer.timerOn == true)
         {
 
-            damageHealth(18);
+            damageHealth(15);
             Debug.Log("Character has touched Large Sphere PLYER");
         }
 

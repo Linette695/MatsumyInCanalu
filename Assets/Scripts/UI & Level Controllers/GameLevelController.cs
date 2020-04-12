@@ -37,10 +37,10 @@ public class GameLevelController : MonoBehaviour
         gameOverPanel.SetActive(false);
         nextLevelPanel.SetActive(false);
 
-        //Initiate the Singleton object/the player info
+/*        //Initiate the Singleton object/the player info
         info = Singleton.Instance.info;
         Debug.Log("health is:" + info.getPlayerHealth());
-        Debug.Log("umbrellas is:" + info.getNumUbrellas());
+        Debug.Log("umbrellas is:" + info.getNumUbrellas());*/
     }
 
 
@@ -101,12 +101,12 @@ public class GameLevelController : MonoBehaviour
             //Stop timer
             timer.timerOn = false; 
 
-            //Update the singleton object
+            /*//Update the singleton object
             info.setPlayerHealth(health.healthBar.value);
             Debug.Log("You've survived!");
             Debug.Log("health is:" + info.getPlayerHealth());
             Debug.Log("umbrellas is:" + info.getNumUbrellas());
-
+*/
             //Display the next level panel
             nextLevelPanel.SetActive(true);
         }
